@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="activities.LoginActivity">
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_margin="32dp"
+        android:background="@drawable/button_holo_light"
+        android:contentDescription="@string/app_name"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+
+    <CustomControls.CustomEditText
+        android:id="@+id/edtUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_holo_light"
+        android:drawableRight="@drawable/user"
+        android:gravity="right"
+        android:hint="@string/label_username"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColor="@color/textWhite"
+        android:textColorHint="@color/primaryLight" />
+
+    <CustomControls.CustomEditText
+        android:id="@+id/edtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_holo_light"
+        android:drawableRight="@drawable/pass"
+        android:gravity="right"
+        android:hint="@string/label_password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textColor="@color/textWhite"
+        android:textColorHint="@color/primaryLight" />
+
+    <CustomControls.CustomButtonBold
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_green"
+        android:text="@string/label_login"
+        android:textColor="@color/textWhite"
+        android:textSize="16sp" />
+</LinearLayout>

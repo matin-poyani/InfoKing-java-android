@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryDark"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CustomControls.CustomTextView
+            android:id="@+id/txtPlayer1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/label_name"
+            android:textColor="@color/textWhite"
+            android:textSize="16sp" />
+
+        <CustomControls.CustomTextViewBold
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_player1"
+            android:textColor="@color/primaryLight"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CustomControls.CustomTextView
+            android:id="@+id/txtPlayer2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/label_name"
+            android:textColor="@color/textWhite"
+            android:textSize="16sp" />
+
+        <CustomControls.CustomTextViewBold
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_player2"
+            android:textColor="@color/primaryLight"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CustomControls.CustomTextViewBold
+                android:id="@+id/txtQuestion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border_light"
+                android:padding="16dp"
+                android:text="@string/label_question"
+                android:textColor="@color/primaryLight"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtB1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_b"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtA1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_a"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtD1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_d"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtC1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_c"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <CustomControls.CustomTextViewBold
+                android:id="@+id/txtQuestion2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border_light"
+                android:padding="16dp"
+                android:text="@string/label_question"
+                android:textColor="@color/primaryLight"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtB2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_b"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtA2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_a"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtD2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_d"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtC2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_c"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <CustomControls.CustomTextViewBold
+                android:id="@+id/txtQuestion3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border_light"
+                android:padding="16dp"
+                android:text="@string/label_question"
+                android:textColor="@color/primaryLight"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtB3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_b"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtA3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_a"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtD3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_d"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtC3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_c"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <CustomControls.CustomTextViewBold
+                android:id="@+id/txtQuestion4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border_light"
+                android:padding="16dp"
+                android:text="@string/label_question"
+                android:textColor="@color/primaryLight"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtB4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_b"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtA4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_a"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtD4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_d"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtC4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_c"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <CustomControls.CustomTextViewBold
+                android:id="@+id/txtQuestion5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border_light"
+                android:padding="16dp"
+                android:text="@string/label_question"
+                android:textColor="@color/primaryLight"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtB5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_b"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtA5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_a"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtD5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_d"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtC5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_c"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <CustomControls.CustomTextViewBold
+                android:id="@+id/txtQuestion6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border_light"
+                android:padding="16dp"
+                android:text="@string/label_question"
+                android:textColor="@color/primaryLight"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtB6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_b"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtA6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_a"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtD6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_d"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+
+                <CustomControls.CustomTextView
+                    android:id="@+id/txtC6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_holo_light"
+                    android:gravity="center"
+                    android:text="@string/label_answer_c"
+                    android:textColor="@color/primaryLight"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

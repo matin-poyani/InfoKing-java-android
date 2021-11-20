@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="activities.CategoryActivity">
+
+    <CustomControls.CustomTextViewBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/message_select_category"
+        android:textColor="@color/primaryLight"
+        android:textSize="16sp" />
+
+    <CustomControls.CustomButtonBold
+        android:id="@+id/btnNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_holo_light"
+        android:text="@string/label_new"
+        android:textColor="@color/textWhite"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lytGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/border_light"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CustomControls.CustomTextView
+                        android:id="@+id/txtCat1A"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/label_category"
+                        android:textColor="@color/primaryLight"
+                        android:textSize="12sp" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rdoCat1A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="@color/primaryLight" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CustomControls.CustomTextView
+                        android:id="@+id/txtCat1B"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/label_category"
+                        android:textColor="@color/primaryLight"
+                        android:textSize="12sp" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rdoCat1B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="@color/primaryLight" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CustomControls.CustomTextView
+                        android:id="@+id/txtCat1C"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/label_category"
+                        android:textColor="@color/primaryLight"
+                        android:textSize="12sp" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rdoCat1C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="@color/primaryLight" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/border_light"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CustomControls.CustomTextView
+                        android:id="@+id/txtCat2A"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/label_category"
+                        android:textColor="@color/primaryLight"
+                        android:textSize="12sp" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rdoCat2A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="@color/primaryLight" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CustomControls.CustomTextView
+                        android:id="@+id/txtCat2B"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/label_category"
+                        android:textColor="@color/primaryLight"
+                        android:textSize="12sp" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rdoCat2B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="@color/primaryLight" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CustomControls.CustomTextView
+                        android:id="@+id/txtCat2C"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/label_category"
+                        android:textColor="@color/primaryLight"
+                        android:textSize="12sp" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rdoCat2C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="@color/primaryLight" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytGroup3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_light"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CustomControls.CustomTextView
+                        android:id="@+id/txtCat3A"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/label_category"
+                        android:textColor="@color/primaryLight"
+                        android:textSize="12sp" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rdoCat3A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="@color/primaryLight" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CustomControls.CustomTextView
+                        android:id="@+id/txtCat3B"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/label_category"
+                        android:textColor="@color/primaryLight"
+                        android:textSize="12sp" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rdoCat3B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="@color/primaryLight" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CustomControls.CustomTextView
+                        android:id="@+id/txtCat3C"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/label_category"
+                        android:textColor="@color/primaryLight"
+                        android:textSize="12sp" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rdoCat3C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="@color/primaryLight" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <CustomControls.CustomButtonBold
+        android:id="@+id/btnSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_dark"
+        android:text="@string/label_set"
+        android:textColor="@color/textWhite"
+        android:textSize="16sp" />
+</LinearLayout>

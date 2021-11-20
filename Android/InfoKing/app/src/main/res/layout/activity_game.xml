@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="activities.GameActivity">
+
+    <CustomControls.CustomTextViewBold
+        android:id="@+id/txtOpponent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_holo_green"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/label_opponent"
+        android:textColor="@color/green"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/lytQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <CustomControls.CustomTextViewBold
+            android:id="@+id/txtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_light"
+            android:padding="8dp"
+            android:text="@string/label_question"
+            android:textColor="@color/primaryLight"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <CustomControls.CustomTextView
+                android:id="@+id/txtB"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_holo_light"
+                android:gravity="center"
+                android:text="@string/label_answer_b"
+                android:textColor="@color/primaryLight"
+                android:textSize="12sp" />
+
+            <CustomControls.CustomTextView
+                android:id="@+id/txtA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_holo_light"
+                android:gravity="center"
+                android:text="@string/label_answer_a"
+                android:textColor="@color/primaryLight"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <CustomControls.CustomTextView
+                android:id="@+id/txtD"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_holo_light"
+                android:gravity="center"
+                android:text="@string/label_answer_d"
+                android:textColor="@color/primaryLight"
+                android:textSize="12sp" />
+
+            <CustomControls.CustomTextView
+                android:id="@+id/txtC"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_holo_light"
+                android:gravity="center"
+                android:text="@string/label_answer_c"
+                android:textColor="@color/primaryLight"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <CustomControls.CustomButtonBold
+            android:id="@+id/btnSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_green"
+            android:text="@string/label_set"
+            android:textColor="@color/textWhite"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <CustomControls.CustomButtonBold
+        android:id="@+id/btnRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_dark"
+        android:text="@string/label_retry"
+        android:textColor="@color/primaryLight"
+        android:textSize="16sp" />
+</LinearLayout>
